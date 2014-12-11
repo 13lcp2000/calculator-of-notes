@@ -16,7 +16,7 @@ public class Calculator_of_notes {
                  do 
                  {
                      UniversitySubjectName = JOptionPane.showInputDialog("Type the NAME of the Subject: ");
-                     if(validarPalabra(UniversitySubjectName))
+                     if(validateWord(UniversitySubjectName))
                      {
                          repetitionsControl = 1; //to DON'T repeat the typing of the subject name.
                      }
@@ -81,26 +81,26 @@ public class Calculator_of_notes {
             }
         return num; //retorna la variable la nota.
     }
-     public static boolean validarPalabra(String palabra) {
+     public static boolean validateWord(String word) {
          //int p;   
-         for (int i = 0; i < palabra.length(); i++) 
+         for (int i = 0; i < word.length(); i++) 
             {
-                //p = palabra.charAt(i);
+                //p = word.charAt(i);
                 //System.out.println(palabra.charAt(i) + " ----- " + p);
-                if(!((palabra.charAt(i) > 64 && palabra.charAt(i) < 91)||//java ASCII code for the letter de la: A-Z (Capital Letters)
-                      (palabra.charAt(i) > 96 && palabra.charAt(i) < 123)|| //java ASCII code for the letter: a-z (NO Capital Letters)
-                      (palabra.charAt(i) == 193)|| //java ASCII code for the letter: Á
-                      (palabra.charAt(i) == 201)|| //java ASCII code for the letter: É 
-                      (palabra.charAt(i) == 205)|| //java ASCII code for the letter: Í
-                      (palabra.charAt(i) == 209)|| //java ASCII code for the letter: Ñ
-                      (palabra.charAt(i) == 211)|| //java ASCII code for the letter: Ó
-                      (palabra.charAt(i) == 218)|| //java ASCII code for the letter: Ú
-                      (palabra.charAt(i) == 225)|| //java ASCII code for the letter: á
-                      (palabra.charAt(i) == 233)|| //java ASCII code for the letter: é
-                      (palabra.charAt(i) == 237)|| //java ASCII code for the letter: í
-                      (palabra.charAt(i) == 241)|| //java ASCII code for the letter: ñ
-                      (palabra.charAt(i) == 243)|| //java ASCII code for the letter: ó
-                      (palabra.charAt(i) == 250)))  //java ASCII code for the letter: ú
+                if(!((word.charAt(i) > 64 && word.charAt(i) < 91)||//java ASCII code for the letter de la: A-Z (Capital Letters)
+                      (word.charAt(i) > 96 && word.charAt(i) < 123)|| //java ASCII code for the letter: a-z (NO Capital Letters)
+                      (word.charAt(i) == 193)|| //java ASCII code for the letter: Á
+                      (word.charAt(i) == 201)|| //java ASCII code for the letter: É 
+                      (word.charAt(i) == 205)|| //java ASCII code for the letter: Í
+                      (word.charAt(i) == 209)|| //java ASCII code for the letter: Ñ
+                      (word.charAt(i) == 211)|| //java ASCII code for the letter: Ó
+                      (word.charAt(i) == 218)|| //java ASCII code for the letter: Ú
+                      (word.charAt(i) == 225)|| //java ASCII code for the letter: á
+                      (word.charAt(i) == 233)|| //java ASCII code for the letter: é
+                      (word.charAt(i) == 237)|| //java ASCII code for the letter: í
+                      (word.charAt(i) == 241)|| //java ASCII code for the letter: ñ
+                      (word.charAt(i) == 243)|| //java ASCII code for the letter: ó
+                      (word.charAt(i) == 250)))  //java ASCII code for the letter: ú
                 {
                     return false;
                 }
