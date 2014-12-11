@@ -81,12 +81,9 @@ public class Calculator_of_notes {
             }
         return num; //retorna la variable la nota.
     }
-     public static boolean validateWord(String word) {
-         //int p;   
+     public static boolean validateWord(String word) {  
          for (int i = 0; i < word.length(); i++) 
             {
-                //p = word.charAt(i);
-                //System.out.println(palabra.charAt(i) + " ----- " + p);
                 if(!((word.charAt(i) > 64 && word.charAt(i) < 91)||//java ASCII code for the letter de la: A-Z (Capital Letters)
                       (word.charAt(i) > 96 && word.charAt(i) < 123)|| //java ASCII code for the letter: a-z (NO Capital Letters)
                       (word.charAt(i) == 193)|| //java ASCII code for the letter: Á
